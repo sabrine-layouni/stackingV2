@@ -14,6 +14,8 @@ import { SidebarComponent } from '../shared/sidebar/sidebar.component';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import {TabViewModule} from 'primeng/tabview';
 import {AccordionModule} from 'primeng/accordion';
+import {ToolbarModule} from 'primeng/toolbar';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {AccordionModule} from 'primeng/accordion';
     CommonModule,
     ProgressSpinnerModule,
     TabViewModule,
-    AccordionModule
+    AccordionModule,
+    ToolbarModule,
+    ButtonModule,
   ],
 
   providers: [
