@@ -28,9 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
+              "src/scss/styles.scss",
               "./node_modules/primeng/resources/primeng.min.css",
-              "./node_modules/font-awesome/css/font-awesome.min.css"
+              "./node_modules/font-awesome/css/font-awesome.min.css",
+              "./node_modules/primeng/resources/themes/nova-light/theme.css"
             ],
             "scripts": ["./node_modules/jquery/dist/jquery.min.js"]
           },

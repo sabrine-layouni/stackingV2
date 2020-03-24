@@ -1,0 +1,20 @@
+<p-accordion (onClose)="onTabClose($event)" (onOpen)="onTabOpen($event)" [activeIndex]="index">
+    <p-accordionTab header="Activités">
+        Content 1
+    </p-accordionTab>
+    <p-accordionTab header="Occupants">
+        <ng-template pTemplate="content">
+            Complex Content to Lazy Load
+        </ng-template>
+    </p-accordionTab>
+    <p-accordionTab header="Propriétés">
+        <ng-template pTemplate="content">
+            Complex Content to Lazy Load
+        </ng-template>
+    </p-accordionTab>
+    <p-accordionTab header="Offres">
+        <ng-template pTemplate="content">
+            Complex Content to Lazy Load
+        </ng-template>
+    </p-accordionTab>v
+</p-accordion>

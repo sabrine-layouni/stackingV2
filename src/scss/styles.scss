@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+@import "_variables.scss";
+@import "_mixins.scss";
+
+body {
+    font: 100% $font-stack;
+    color: $primary-color;
+
+    .progress {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: rotate(-50%, -50%);
+    }
+
+    p-accordion {
+      z-index: 1;
+      position: absolute;
+      width: 25%;
+      /* height: 200px; */
+      top: 30%;
+      left: 1%;
+    }
+
+    p-tabView {
+      position: relative;
+      padding-left: 5px;
+    }
+  }
