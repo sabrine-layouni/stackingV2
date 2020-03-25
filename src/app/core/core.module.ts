@@ -10,17 +10,21 @@ import { AboutComponent } from './about/about.component';
 
 import { ToolbarComponent } from '../shared/toolbar/toolbar.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
+import { ParkingsComponent } from '../shared/parkings/parkings.component';
 
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import {TabViewModule} from 'primeng/tabview';
 import {AccordionModule} from 'primeng/accordion';
 import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
+import {CardModule} from 'primeng/card';
+import {DragDropModule} from 'primeng/dragdrop';
 
 @NgModule({
   declarations: [
     ToolbarComponent,
     SidebarComponent,
+    ParkingsComponent,
     HomeComponent,
     AboutComponent
   ],
@@ -31,6 +35,8 @@ import {ButtonModule} from 'primeng/button';
     AccordionModule,
     ToolbarModule,
     ButtonModule,
+    CardModule,
+    DragDropModule
   ],
 
   providers: [

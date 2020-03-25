@@ -1,0 +1,78 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+    p-accordion {
+        z-index: 1;
+        position: absolute;
+        width: 25%;
+        height: 50%;
+        top: 18%;
+        left: 2%;
+        .ui-accordion-toggle-icon {
+          display: none;
+        }
+        .ui-accordion:first .ui-accordion-header {
+            border-top:none;
+        }
+        .ui-accordion-header {
+          margin-bottom: 0 !important;
+          margin-top: 0 !important;
+          padding: 0.04em 0;
+          a {
+            background-color: white !important;
+            color: $primary-color;
+  
+            color: #1b1d1f;
+          }
+        }
+        .ui-accordion-content {
+          background-color: $light-gray !important;
+          border-top: none !important;
+        }
+        .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active a,
+        .ui-accordion .ui-accordion-header:not(.ui-state-disabled).ui-state-active:hover a {
+          color: #1b1d1f;
+          border-color: #c8c8c8;
+        }
+      }
+  
+    p-tabView {
+    position: relative;
+    left: 1%;
+    right: 1%;
+    .ui-tabview {
+        padding-right: 2%;
+        border: none;
+        .ui-tabview-panels {
+        border: none;
+        }
+        &.ui-tabview-top .ui-tabview-nav {
+            background-color: $light-gray;
+            margin-bottom: 6%;
+            li {
+                &.ui-state-active,
+                &.ui-state-active:hover {
+                    background-color: white;
+                    border:none;
+                    a {
+                        color: $primary-color;
+                        font-weight: bold;
+                    }
+                }
+                background-color: $light-gray;
+                border: none;
+                a {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    }
+    
+    p-card {
+        text-align: center;
+        .ui-card-title {
+            font-size: 13px;
+            border-bottom: 1px solid #D2D2D2;
+            margin-bottom: 10px;
+        }
+    }

@@ -6,10 +6,11 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 
+
 @NgModule({
   declarations: [
     ToolbarComponent,
-    SidebarComponent
+    SidebarComponent,
   ],
   imports: [
     CommonModule,
