@@ -1,1 +1,10 @@
-<p>cell-mode works!</p>
+<div id="aerienMode">
+    <div class="p-grid cells-container">
+        <div class="p-col-12 p-md-6 p-lg-3" *ngFor="let cell of cells; i as index">
+                <p-card class="_item" header="{{ cell.name }}">
+                    <hr><hr><hr><hr><hr><hr><hr><hr>
+                </p-card>
+        </div>
+    </div>
+</div>
+<div id="scrollMode"></div>
