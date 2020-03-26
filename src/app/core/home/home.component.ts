@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  plan: object = { isCellMode: false, buildings:[{name:"BAT 1"}, {name: "BAT2"}, {name: "BAT 3"}] };
   constructor() { }
 
   ngOnInit() {

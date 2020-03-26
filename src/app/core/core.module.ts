@@ -19,6 +19,8 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import {DragDropModule} from 'primeng/dragdrop';
+import { BuildingComponent } from '../shared/building/building.component';
+import { CellModeComponent } from './cell-mode/cell-mode.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import {DragDropModule} from 'primeng/dragdrop';
     SidebarComponent,
     ParkingsComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    BuildingComponent,
+    CellModeComponent
   ],
   imports: [
     CommonModule,
