@@ -19,6 +19,7 @@ import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import {DragDropModule} from 'primeng/dragdrop';
+import {CarouselModule} from 'primeng/carousel';
 import { BuildingComponent } from '../shared/building/building.component';
 import { CellModeComponent } from './cell-mode/cell-mode.component';
 
@@ -40,7 +41,8 @@ import { CellModeComponent } from './cell-mode/cell-mode.component';
     ToolbarModule,
     ButtonModule,
     CardModule,
-    DragDropModule
+    DragDropModule,
+    CarouselModule
   ],
 
   providers: [
