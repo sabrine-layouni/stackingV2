@@ -9,6 +9,10 @@ import { NatureComponent } from './activity/nature/nature.component';
 import { OccupantComponent } from './activity/occupant/occupant.component';
 import { OwnerComponent } from './activity/owner/owner.component';
 import { ProposedSurfaceComponent } from './activity/proposed-surface/proposed-surface.component';
+import { AddBuildingComponent } from './popins/add-building/add-building.component';
+import { ManageFloorComponent } from './popins/manage-floor/manage-floor.component';
+import { ManageParkingsComponent } from './popins/manage-parkings/manage-parkings.component';
+import { ChooseBuildingModeComponent } from './popins/choose-building-mode/choose-building-mode.component';
 
 
 @NgModule({
@@ -19,6 +23,10 @@ import { ProposedSurfaceComponent } from './activity/proposed-surface/proposed-s
     OccupantComponent,
     OwnerComponent,
     ProposedSurfaceComponent,
+    AddBuildingComponent,
+    ManageFloorComponent,
+    ManageParkingsComponent,
+    ChooseBuildingModeComponent,
   ],
   imports: [
     CommonModule,
