@@ -20,8 +20,11 @@ import {ButtonModule} from 'primeng/button';
 import {CardModule} from 'primeng/card';
 import {DragDropModule} from 'primeng/dragdrop';
 import {CarouselModule} from 'primeng/carousel';
+
 import { BuildingComponent } from '../shared/building/building.component';
+import { FloorComponent } from '../shared/activity/floor/floor.component';
 import { CellModeComponent } from './cell-mode/cell-mode.component';
+import { DraggableItemComponent } from '../shared/draggable-item/draggable-item.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { CellModeComponent } from './cell-mode/cell-mode.component';
     HomeComponent,
     AboutComponent,
     BuildingComponent,
-    CellModeComponent
+    FloorComponent,
+    CellModeComponent,
+    DraggableItemComponent,
   ],
   imports: [
     CommonModule,

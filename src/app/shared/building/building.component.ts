@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-building',
@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BuildingComponent implements OnInit {
 
+  @Input() undergrounds;
+  @Input() floors;
+  @Input() name;
   constructor() { }
 
   ngOnInit() {

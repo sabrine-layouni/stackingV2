@@ -7,19 +7,50 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  plan: object = { isCellMode: true, buildings:[{name:"BAT 1", cells: [{name:"cell 1"},
-  {name:"cell 2"},{name:"cell 3"},{name:"cell 4"},{name:"cell 5"},{name:"cell 6"},{name:"cell 7"},{name:"cell 8"},{name:"cell 9"}],
-  underground: [{pos: -1, area: 100},
-    {pos: -2, area: 100},
-    {pos: -3, area: 100},
-    {pos: -4, area: 100}],
-  floors: [{pos: 0, area: 100},
-    {pos: 1, area: 100},
-    {pos: 2, area: 100},
-    {pos: 3, area: 100},
-    {pos: 4, area: 100}]},
-   {name: "BAT2"},
-   {name: "BAT 3"}] };
+  plan: object = { isCellMode: false,name:"BAT 1", buildings:[
+  {tf_name:"BAT 1", tf_buildingid:"rezge1g524ez35g",
+  undergrounds: [
+    {tf_level: -1, tf_surface: 100, tf_floorid:"5412f4e5z"},
+    {tf_level: -2, tf_surface: 100},
+    {tf_level: -3, tf_surface: 100},
+    {tf_level: -4, tf_surface: 100}
+  ],
+  floors: [
+    {tf_level: 0, tf_surface: 100},
+    {tf_level: 1, tf_surface: 100},
+    {tf_level: 2, tf_surface: 100},
+    {tf_level: 3, tf_surface: 100},
+    {tf_level: 4, tf_surface: 100}
+  ],
+  tf_natures:[
+    {tf_name:"Services (Bureaux)", tf_color:"#9eaede"},
+    {tf_name:"Habitaion", tf_color:"#9eaede"},
+    {tf_name:"RIE", tf_color:"#9eaede"},
+    {tf_name:"Bureaux", tf_color:"#9eaede"},
+    {tf_name:"Laboratoires", tf_color:"#9eaede"},
+    {tf_name:"Logistique", tf_color:"#9eaede"},
+  ],
+  tf_occupancies: [
+    {tf_occupant_value: "fsfsqfqs", tf_color:"303531", tf_occupancyid:"9ere321e5r4er1e2r1e2"},
+    {tf_occupant_value: "fsfsqfqs", tf_color:"303531", tf_occupancyid:"9ere321e5r4er1e2r1e2"},
+    {tf_occupant_value: "fsfsqfqs", tf_color:"303531", tf_occupancyid:"9ere321e5r4er1e2r1e2"},
+    {tf_occupant_value: "fsfsqfqs", tf_color:"303531", tf_occupancyid:"9ere321e5r4er1e2r1e2"},
+    {tf_occupant_value: "fsfsqfqs", tf_color:"303531", tf_occupancyid:"9ere321e5r4er1e2r1e2"},
+  ],
+  tf_properties: [],
+  tf_cells:[],
+  tf_parkings:[],
+  tf_offers:[]},
+    {tf_name:"BAT 2", tf_buildingid:"rezge1g524ez35g"},
+    {tf_name:"BAT 3", tf_buildingid:"rezge1g524ez35g"},
+    {tf_name:"BAT 4", tf_buildingid:"rezge1g524ez35g"},
+    {tf_name:"BAT 5", tf_buildingid:"rezge1g524ez35g"},
+    {tf_name:"BAT 6", tf_buildingid:"rezge1g524ez35g"},
+    {tf_name:"BAT 7", tf_buildingid:"rezge1g524ez35g"},
+    {tf_name:"BAT 8", tf_buildingid:"rezge1g524ez35g"},
+    {tf_name:"BAT 9", tf_buildingid:"rezge1g524ez35g"}
+  ],
+  };
   constructor() { }
 
   ngOnInit() {

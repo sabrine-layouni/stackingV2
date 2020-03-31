@@ -1,16 +1,15 @@
 <div class="p-col-12">
 <p-tabView (onChange)="onTabChange($event)">
-        <p-tabPanel *ngFor="let building of plan.buildings; index as i" header="{{building.name}}" [selected]="i === 0">
+        <p-tabPanel *ngFor="let building of buildings; index as i" header="{{building.tf_name}}" [selected]="i === 0">
             <div class="p-grid p-justify-center">
-                <div class="p-col-4"></div>
-                <div class="p-col-7">
+                <div class="p-col-7 p-offset-3">
                     <div class="box">
-                        <ng-template [ngIf]="plan.isCellMode" [ngIfElse]="buildingT">
-                            <app-cell-mode [cells]="building.cells"></app-cell-mode>
+                        <ng-template [ngIf]="cellMode" [ngIfElse]="buildingT">
+                            <app-cell-mode [cells]="building.tf_cells"></app-cell-mode>
                         </ng-template>
                         <ng-template #buildingT>
-                            <app-building></app-building>
-                            {{building.name}}
+                           
+ <app-building [name]="buildings.tf_name" [floors]="building.floors" [undergrounds]="building.undergrounds"></app-building>
                         </ng-template>
                     </div>
                 </div>
@@ -24,5 +23,5 @@
 </div>
 <div class="_buttons p-col-3">
     <button pButton type="button" label="Street View" class="ui-button-raised"></button>
-    <button pButton type="button" label="Vue Aérienne" class="ui-button-raised ui-button-success"></button>
+    <button pButton type="button" label="Vue Aérienne" class="ui-button-raised ui-button-warning"></button>
 </div>

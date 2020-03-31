@@ -1,9 +1,6 @@
 <p-accordion (onClose)="onTabClose($event)" (onOpen)="onTabOpen($event)" [activeIndex]="index">
     <p-accordionTab header="Activités">
-        Content 1
-        Content 1
-        Content 1Content 1
-        Content 1v
+        <app-draggable-item *ngFor="let nature of natures" [item]="nature"></app-draggable-item>
     </p-accordionTab>
     <p-accordionTab header="Occupants">
         <ng-template pTemplate="content">

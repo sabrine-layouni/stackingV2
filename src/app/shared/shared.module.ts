@@ -5,14 +5,20 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
-import { FloorComponent } from './floor/floor.component';
+import { NatureComponent } from './activity/nature/nature.component';
+import { OccupantComponent } from './activity/occupant/occupant.component';
+import { OwnerComponent } from './activity/owner/owner.component';
+import { ProposedSurfaceComponent } from './activity/proposed-surface/proposed-surface.component';
 
 
 @NgModule({
   declarations: [
     ToolbarComponent,
     SidebarComponent,
-    FloorComponent,
+    NatureComponent,
+    OccupantComponent,
+    OwnerComponent,
+    ProposedSurfaceComponent,
   ],
   imports: [
     CommonModule,

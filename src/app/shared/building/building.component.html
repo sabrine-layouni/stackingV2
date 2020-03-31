@@ -1,1 +1,12 @@
-<p>building works!</p>
+<div class="p-grid" id="building">
+    <div class="p-col-6 p-offset-3 name">
+        <div class="box">{{name}}</div>
+    </div>
+</div>
+    <div *ngFor="let floor of floors">
+        <app-floor [floor]="floor"></app-floor>
+    </div>
+    <hr>
+    <div *ngFor="let underground of undergrounds">
+        <app-floor [floor]="underground"></app-floor>
+    </div>

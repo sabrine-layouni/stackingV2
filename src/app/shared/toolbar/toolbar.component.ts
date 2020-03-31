@@ -9,7 +9,8 @@ import {MenuItem} from 'primeng/api';
 export class ToolbarComponent implements OnInit {
 
   items: MenuItem[];
-  @Input() plan;
+  @Input() buildings;
+  @Input() cellMode: boolean;
 
   constructor() { }
 
