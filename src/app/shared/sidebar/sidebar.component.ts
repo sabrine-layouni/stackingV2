@@ -7,7 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  @Input() natures;
+  @Input() kinds;
+  @Input() occupants;
+  @Input() owners;
+  @Input() offers;
   index: number = -1;
   constructor() { }
 

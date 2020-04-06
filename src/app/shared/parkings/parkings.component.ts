@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-parkings',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParkingsComponent implements OnInit {
 
-  parkings: Array<object> = [];
+  @Input() parkings: Array<object>;
+  @Input() mode: string;
   constructor() { }
 
   ngOnInit() {

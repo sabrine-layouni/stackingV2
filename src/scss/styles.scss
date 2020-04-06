@@ -34,7 +34,7 @@ body {
     p-card.parkings {
       z-index: 1;
       position: absolute;
-      top: 18%;
+      top: 15%;
       right: 2%;
 
       &.parkings {
@@ -47,12 +47,36 @@ body {
           cursor: default;
         }
         &.rounded {
-          div:first-child {
+          div:not(.ui-card-title):first-child {
             border-bottom-left-radius: 21px;
             border-bottom-right-radius: 21px;
           }
-
         }
       }
     }
+  }
+
+  /* icon classes */
+  .icon {
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    display: block;
+    height: 25px;
+
+    &._edit {
+      background-image: $pencil;
+    }
+    &._car {
+      background-image: $car;
+  }
+  &._truck {
+      background-image: $truck;
+  }
+  &._bike {
+      background-image: $bike;
+  }
+  &._moto {
+      background-image: $motorBike;
+  }
   }

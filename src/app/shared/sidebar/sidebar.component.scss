@@ -1,0 +1,23 @@
+@import "../../../scss/variables";
+
+#add-new {
+    margin-top: 10px;
+    padding: 7px;
+    border-top: 1px solid $add-menu_border;
+    span {
+        position: static;
+        cursor: pointer;
+        font-size: 13px;
+    }
+    span:before {
+        content:'+';
+        border: none;
+        color: #5B5757;
+        font-size: 20px;
+        cursor: pointer;
+        outline: none;
+        display: inline-block;
+        vertical-align: middle;
+        padding-right: 5px;
+    }
+}

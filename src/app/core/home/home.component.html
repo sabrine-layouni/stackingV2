@@ -1,7 +1,9 @@
 <div class="ui-fluid p-grid">
     <app-toolbar class="p-col-12 p-col-nogutter" [buildings]="plan.buildings" [cellMode]="plan.isCellMode"></app-toolbar>
-    <app-sidebar class="p-col-12 p-md-2" [natures]="plan.buildings[0].tf_natures"></app-sidebar>
-    <app-parkings></app-parkings>
+    <app-sidebar class="p-col-12 p-md-2" [kinds]="plan.buildings[0].tf_natures"
+    [occupants]="plan.buildings[0].tf_occupancies" [owners]="plan.buildings[0].tf_properties"
+    [offers]="plan.buildings[0].tf_offers"></app-sidebar>
+    <app-parkings [parkings]="[]" [mode]="'kind'"></app-parkings>
     <div class="ui-g progress" *ngIf="false">
     <p-progressSpinner ></p-progressSpinner>
     </div>

@@ -1,22 +1,26 @@
 <p-accordion (onClose)="onTabClose($event)" (onOpen)="onTabOpen($event)" [activeIndex]="index">
     <p-accordionTab header="Activités">
-        <app-draggable-item *ngFor="let nature of natures" [item]="nature"></app-draggable-item>
+        <app-draggable-item *ngFor="let kind of kinds" [item]="kind"></app-draggable-item>
     </p-accordionTab>
     <p-accordionTab header="Occupants">
         <ng-template pTemplate="content">
-            Complex Content to Lazy Load
-            Content 1
-            vvContent 1Content 1
+        <app-draggable-item *ngFor="let occupant of occupants" [item]="occupant"></app-draggable-item>
+        <div id="add-new">
+            <span>Ajouter des occupants</span>
+        </div>
         </ng-template>
     </p-accordionTab>
     <p-accordionTab header="Propriétés">
         <ng-template pTemplate="content">
-            Complex Content to Lazy Load
+        <app-draggable-item *ngFor="let owner of owners" [item]="owner"></app-draggable-item>
+        <div id="add-new">
+            <span>Ajouter des propriétaires</span>
+        </div>
         </ng-template>
     </p-accordionTab>
     <p-accordionTab header="Offres">
         <ng-template pTemplate="content">
-            Complex Content to Lazy Load
+            <app-draggable-item *ngFor="let offer of offers" [item]="offer"></app-draggable-item>
         </ng-template>
     </p-accordionTab>
 </p-accordion>

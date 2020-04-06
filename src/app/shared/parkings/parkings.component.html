@@ -9,9 +9,37 @@
             <p-header>
                 <img src="Card" src="assets/images/parkingsHeader.png">
             </p-header>
-            <div></div>
+            <div id="item" class="p-grid p-align-center vertical-container" *ngFor="let parking of parkings">
+                <div class="p-col" *ngIf="mode !=='kind'">
+                    <div class="box"><span class="edit"></span></div>
+                </div>
+                <div class="p-col" [ngSwitch]="parking.type" *ngIf="mode==='kind'">
+                    <span class="icon _car" *ngSwitchCase="'car'">{{parking.img}}</span>
+                    <span class="icon _truck" *ngSwitchCase="'truck'">{{parking.img}}</span>
+                    <span class="icon _moto" *ngSwitchCase="'moto'">{{parking.img}}</span>
+                    <span class="icon _bike" *ngSwitchCase="'bike'">{{parking.img}}</span>
+                </div>
+                <div class="p-col" *ngIf="mode !=='kind'">
+                    <span class="rounded"></span>
+                </div>
+                <div class="p-col">
+                    <div class="box">{{parking.count}}</div>
+                </div>
+            </div>
             <p-footer>
-                <div pDroppable class="_drag">Glisser ici</div>
+                <div *ngIf="!parkings.length && mode !=='kind'" pDroppable class="_drag">Glisser ici</div>
+                <div *ngIf="mode ==='kind'" class="p-grid p-align-center vertical-container">
+                    <div class="p-col" *ngIf="parkings.length; else add">
+                        <span class="icon _edit"></span>
+                        <span >Editer</span>
+                    </div>
+
+                        <ng-template #add>
+                            <div class="p-col">
+                                <span class="add">Ajouter</span>
+                            </div>
+                        </ng-template>
+                    </div>
             </p-footer>
     </p-card>
 </div>
